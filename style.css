@@ -1,0 +1,151 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* ===== Profile Box ===== */
+.profile-box {
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  margin-bottom: 30px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #00d4ff;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.profile-box h1 {
+  font-size: 2rem;
+  color: #00d4ff;
+}
+
+.profile-box p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #00d4ff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff4ecd;
+  transform: translateY(-5px);
+}
+
+/* ===== Content Boxes ===== */
+.content-box {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+  transform: translateY(-5px);
+}
+
+.content-box h2 {
+  color: #ff4ecd;
+  margin-bottom: 10px;
+}
+
+.content-box p,
+.content-box ul,
+.content-box ol {
+  color: #ddd;
+}
+
+ul li,
+ol li {
+  margin-bottom: 8px;
+}
+
+/* Icons inside list */
+ul li i, 
+ol li i {
+  margin-right: 8px;
+  color: #00d4ff;
+}
+
+/* ===== Skills List ===== */
+.skills-list li {
+  display: inline-block;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.skills-list li:hover {
+  background: rgba(0, 212, 255, 0.3);
+}
+
+/* ===== Contact List ===== */
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.contact-list a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+.footer-box {
+  text-align: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
