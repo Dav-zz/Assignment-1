@@ -4,27 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Basumatary - Profile</title>
+
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
   <div class="main-box">
-    
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/dav.jpg" alt="logo">
+        David
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
     <!-- Header -->
-    <header class="box header">
+    <header class="box header" id="home">
       <img src="img/dav.jpg" alt="My Profile Picture">
       <h1>David Basumatary</h1>
     </header>
 
     <!-- About Me -->
-    <section class="box small-box">
+    <section class="box" id="about">
       <h2>About Me</h2>
       <p>I'm a Student with a deep passion for music, and always curious to explore new things and coding projects and discovering creative ideas.</p>
     </section>
 
     <!-- Interests -->
-    <section class="box small-box">
+    <section class="box" id="interests">
       <h2>My Interests</h2>
       <ul>
         <li>Reading Books</li>
@@ -34,17 +56,8 @@
       </ul>
     </section>
 
-    <!-- Education -->
-    <section class="box small-box">
-      <h2>Education</h2>
-      <ol>
-        <li>High School: U.N Academy, Kokrajhar</li>
-        <li>Currently: B.Tech in Computer Science and Engineering at CIT, Kokrajhar</li>
-      </ol>
-    </section>
-
     <!-- Skills -->
-    <section class="box small-box">
+    <section class="box" id="skills">
       <h2>Skills</h2>
       <ul>
         <li><i class="fas fa-code"></i> C Language</li>
@@ -54,36 +67,42 @@
     </section>
 
     <!-- Contact -->
-    <section class="box small-box contact">
+    <section class="box contact" id="contact">
       <h2>Links</h2>
       <ul>
-        <li>
-          <a href="mailto:u23cse1046@cit.ac.in" target="_blank">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://discord.com/users/1145599362626502676" target="_blank">
-            <i class="fab fa-discord"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Dav-zz" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
+        <li><a href="mailto:u23cse1046@cit.ac.in"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="https://discord.com/users/1145599362626502676" target="_blank"><i class="fab fa-discord"></i></a></li>
+        <li><a href="https://github.com/Dav-zz" target="_blank"><i class="fab fa-github"></i></a></li>
       </ul>
     </section>
 
     <!-- Footer -->
-    <footer class="box footer">
-      <p>NyNZex</p>
+    <footer class="footer">
+      NyNZExDav9z
     </footer>
 
   </div>
 
+  <!-- JS for Hamburger -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu after clicking a link (mobile)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
+
+
 
 
 
